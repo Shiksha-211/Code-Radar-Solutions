@@ -4,9 +4,9 @@ int main() {
     char c[100];
     char h[100];
     scanf("%s %d",&c,&a);
-    scanf("%s",&d);
+    scanf("%s",&h);
     printf("Name: %s\n",c);
     printf("Age: %d\n",a);
-    printf("Hobby: %s\n",d);
+    printf("Hobby: %s\n",h);
     return 0;
 }
