@@ -16,10 +16,10 @@ int main() {
         printf("Below Average");
         break;
         case'F':
-        printf("Invalid Grade");
+        printf("Fail");
         break;
         default:
-        printf("Fail");
+        printf("Invalid grade");
         
     }
     return 0;
