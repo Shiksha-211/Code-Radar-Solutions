@@ -7,13 +7,13 @@ int main() {
         case '+':
         printf(a+b);
         break;
-        case'-':
+        case '-':
         printf(a-b);
         break;
-        case'*':
+        case '*':
         printf(a*b);
         break;
-        case'/':
+        case '/':
         printf(a/b);
     }
     printf("%s", welcome());
