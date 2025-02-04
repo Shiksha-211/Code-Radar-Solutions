@@ -5,16 +5,16 @@ int main() {
     scanf("%d %d %c",&a ,&b, &c);
     switch (c){
         case '+':
-        printf(a+b);
+        printf("%d" ,a+b);
         break;
         case '-':
-        printf(a-b);
+        printf("%d",a-b);
         break;
         case '*':
-        printf(a*b);
+        printf("%d",a*b);
         break;
         case '/':
-        printf(a/b);
+        printf("%d",a/b);
         break;
         default:
         printf("Step Out ");
