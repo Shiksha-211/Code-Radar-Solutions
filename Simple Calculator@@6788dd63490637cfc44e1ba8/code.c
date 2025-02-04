@@ -15,6 +15,10 @@ int main() {
         break;
         case '/':
         printf(a/b);
+        break;
+        default:
+        printf("Step Out ");
+        break;
     }
     printf("%s", welcome());
     return 0;
