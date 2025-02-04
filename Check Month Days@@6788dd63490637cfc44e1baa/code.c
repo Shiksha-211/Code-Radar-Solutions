@@ -7,8 +7,11 @@ int main() {
     else if(a==2){
         printf("28");
     }
-    else{
+    else if(a==6 || a== 4 ||a==9 ||a==11){
         printf("30");
+    }
+    else{
+        printf("Invalid month")
     }
     return 0;
 }
