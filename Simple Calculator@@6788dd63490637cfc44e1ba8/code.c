@@ -15,16 +15,15 @@ int main() {
         break;
         case '/':
         if(b==0){
-            printf("Do again");
-        }
+            printf("error") ;
+            }
         else{
         printf("%d",a/b);
         }
         break;
         default:
-        printf("Step Out ");
+        printf("error");
         break;
     }
-    printf("%s", welcome());
     return 0;
 }
