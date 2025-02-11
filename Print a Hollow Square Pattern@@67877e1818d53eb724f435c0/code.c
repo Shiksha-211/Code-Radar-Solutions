@@ -7,7 +7,7 @@ int main() {
             if((i==1 || j==1)  /*()*/){
             printf("*");
         }
-        else if(i=a-1 || j = a-1){
+        else if(i==a-1 || j == a-1){
             printf("*");
         }
         else{
