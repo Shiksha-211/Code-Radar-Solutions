@@ -11,9 +11,7 @@ int main() {
                 printf("*");
             }
         }
-        
         printf("\n");
     }
-    printf("%s", welcome());
     return 0;
 }
