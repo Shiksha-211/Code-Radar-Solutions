@@ -7,12 +7,12 @@ int main() {
     
     for (int i = 1; i <= num; i++) {
     
-        for (int j = i; j <= num; j++) {
+        for (int j = i+1; j <= num; j++) {
             printf(" ");
         }
         
         for (int j = 1; j <= i; j++) {
-            printf("%d", j);
+            printf("%d ", j);
         }
         
         printf("\n");
