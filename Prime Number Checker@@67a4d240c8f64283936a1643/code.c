@@ -8,10 +8,10 @@ int isPrime(){
         }
     }
     if (count>2){
-        printf("composite");
+        printf("0");
     }
     else{
-        printf("prime");
+        printf("1");
     }
 }
 int main() {
