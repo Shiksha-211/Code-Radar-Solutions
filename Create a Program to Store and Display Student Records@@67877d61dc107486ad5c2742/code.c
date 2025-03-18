@@ -1,5 +1,4 @@
-// Your code here...
-#include <stdio.h>
+// Your code here...#include <stdio.h>
 
 struct student{
         int rollno;
@@ -20,5 +19,5 @@ int main(){
         printf("Name: %c,",stud[i].name);
         printf("Marks: %f",stud[i].marks);
     }
-    return 0;
+return 0;
 }
