@@ -8,5 +8,5 @@ int main() {
         h++;
     }  
     printf("%d",h);
-    return 0;
+    return 0;
 }
