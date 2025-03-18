@@ -1,22 +1,21 @@
 // Your code here...
 #include <stdio.h>
-int isPrime(int num,int a, int b) {
+int isPrime(int num) {
     if (num <= 1) {
-        return false; 
+        return 0;
     }
-    for (int i = 2; i * i <= num; i++) { 
+    for (int i = 2; i * i <= num; i++) {
         if (num % i == 0) {
-            return false;  
+            return 0;
         }
     }
-    
-    
-    // Loop through the range [a, b]
+    return 1;
+}
+void findPrimesInRange(int a, int b) {
     for (int i = a; i <= b; i++) {
         if (isPrime(i)) {
-            printf("%d ", i);  // Print prime number
+            printf("%d ", i);
         }
     }
     printf("\n");
-    return true;  // num is prime
 }
