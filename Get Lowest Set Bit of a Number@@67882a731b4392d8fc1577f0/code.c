@@ -10,5 +10,5 @@ int main() {
         t++;
         }
     printf("%d",t);
-    return 0;
+    return 0;
 }
