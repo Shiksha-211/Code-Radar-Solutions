@@ -1,11 +1,12 @@
 // Your code here...
+#include <stdio.h>
 int isPrime(int num,int a, int b) {
     if (num <= 1) {
-        return false;  // Numbers less than or equal to 1 are not prime
+        return false; 
     }
-    for (int i = 2; i * i <= num; i++) { // Check divisibility up to the square root of num
+    for (int i = 2; i * i <= num; i++) { 
         if (num % i == 0) {
-            return false;  // num is divisible by i, hence not prime
+            return false;  
         }
     }
     
