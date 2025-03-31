@@ -16,7 +16,7 @@ int main(){
             if(arr[i]==arr[j]){
                 c++;
             }
-            a[j]=-1;
+            arr[j]=-1;
         }
         }
         arr2[i]=c;
