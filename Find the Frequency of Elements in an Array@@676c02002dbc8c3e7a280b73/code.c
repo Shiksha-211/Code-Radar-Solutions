@@ -1,4 +1,4 @@
-#include <stdio.h>
+/*#include <stdio.h>
 int main(){
     int n;
     scanf("%d",&n);
@@ -27,5 +27,29 @@ int main(){
         }
     
     }
+    return 0;
+}*/
+#include <stdio.h>
+
+#define MAX 100000  // Define max range if numbers are within a limit
+
+int main() {
+    int n;
+    scanf("%d", &n);
+    
+    int arr[n], freq[MAX] = {0};  // Hash table for frequency counting
+
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+        freq[arr[i]]++;  // Store frequency
+    }
+
+    for (int i = 0; i < n; i++) {
+        if (freq[arr[i]] > 0) {  // Print only once
+            printf("%d %d\n", arr[i], freq[arr[i]]);
+            freq[arr[i]] = 0;  // Mark as printed
+        }
+    }
+
     return 0;
 }
