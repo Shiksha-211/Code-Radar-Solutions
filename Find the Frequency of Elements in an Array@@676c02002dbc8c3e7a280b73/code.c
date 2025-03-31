@@ -13,5 +13,6 @@ int main(){
         }
         num_rep+=1;
     }
+    printf("%d %d \n",num,num_rep );
     return 0;
 }
