@@ -23,9 +23,10 @@ int main(){
     }   
     }
    
-    for(int i=0;i<n;i++){
+    for(int i=0;i<n;i++)
+    {
         if(arr[i]!=-1){
-printf("%d %d \n",arr[i],arr2[i]);
+            printf("%d %d \n",arr[i],arr2[i]);
         }
     
     }
