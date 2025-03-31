@@ -18,6 +18,6 @@ int main(){
         }
    
     
-    printf("%d %d \n",key,freq++ );
+    printf("%d %d \n",key,freq );
     return 0;
 }
