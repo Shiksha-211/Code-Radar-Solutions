@@ -3,20 +3,21 @@ int main(){
     int n;
     scanf("%d",&n);
     int arr[n]; 
+    int key =0;
+    int freq =0;
     for(int i =0;i<n;i++){
-        scanf("%d",&arr[i]);
+        scanf("%d",&a);
     }
-    int num = 0;
-    int num_rep =0;
     for(int i =0;i<n;i++){
-        for(int j =i+1;j<=n;j++){
-            num_rep ++;
+        for(int j=i;j<n-i-1;j++){
             if(arr[i]==arr[j]){
-                num++;
-                break;
+                key++;
             }
         }
-    }
-    printf("%d %d \n",num,num_rep );
+        freq++;   
+        }
+   
+    
+    printf("%d %d \n",key,freq++ );
     return 0;
 }
