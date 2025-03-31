@@ -4,18 +4,15 @@ int main(){
     scanf("%d",&n);
     int arr[n];
     int arr2[n]; 
-    int key =0;
-    int freq =0;
+    int c=1;
     for(int i =0;i<n;i++){
         scanf("%d",&arr[i]);
-    
+    }
     for(int i =0;i<n;i++){
-        int c =1;
         if(arr[i]!=-1){
         for(int j=i+1;j<n;j++){
             if(arr[i]==arr[j]){
                 c++;
-            }
             arr[j]=-1;
         }
         }
