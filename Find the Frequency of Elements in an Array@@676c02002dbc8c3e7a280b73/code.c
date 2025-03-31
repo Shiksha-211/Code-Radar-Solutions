@@ -6,7 +6,7 @@ int main(){
     int key =0;
     int freq =0;
     for(int i =0;i<n;i++){
-        scanf("%d",&a);
+        scanf("%d",&arr[i]);
     }
     for(int i =0;i<n;i++){
         for(int j=i;j<n-i-1;j++){
