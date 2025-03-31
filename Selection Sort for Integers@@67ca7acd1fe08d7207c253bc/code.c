@@ -1,4 +1,9 @@
 // Your code here...
+void printArray(int arr[],int n){
+    for(int i =0;i<n-1;i++){
+        printf("%d",arr[i]);
+    }
+}
 void selectionSort(int arr[], int n) 
 { 
 for (int i = 0; i < n - 1; i++) 
@@ -10,4 +15,5 @@ if (arr[j] < arr[minIndex]) {
 minIndex = j;
 } }
 int temp = arr[minIndex]; arr[minIndex] = arr[i]; arr[i] = temp;
-} }
+}
+printArray() }
