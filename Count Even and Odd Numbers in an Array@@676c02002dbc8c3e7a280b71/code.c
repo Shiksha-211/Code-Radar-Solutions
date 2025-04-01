@@ -8,7 +8,7 @@ int main(){
         scanf("%d",&arr[i]);
     }
     int count_even =0,count_odd =0;
-    for(int i =0;i<n;i++0){
+    for(int i =0;i<n;i++){
         if(arr[i]%2==0){
             count_even++;
         }
