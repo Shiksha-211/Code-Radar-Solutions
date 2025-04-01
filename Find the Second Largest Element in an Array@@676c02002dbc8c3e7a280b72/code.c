@@ -9,7 +9,7 @@ int main(){
         scanf("%d",&arr[i]);
     }
     int max = INT_MIN;
-    int max_sec= -1 ;
+    int max_sec=INT_MIN ;
     for(int i =1;i<n;i++){
         if(arr[i]>max){
             max_sec = max;
