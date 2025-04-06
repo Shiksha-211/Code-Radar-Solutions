@@ -13,6 +13,9 @@ int main (){
             count++;
         }
     }
-    printf("%d",count);
+    if (count>n/2){
+ printf("%d",count);
+    }
+   
     return 0;
 } 
