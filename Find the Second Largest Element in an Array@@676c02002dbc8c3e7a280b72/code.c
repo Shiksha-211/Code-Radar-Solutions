@@ -17,13 +17,12 @@ int main(){
         }
         if((arr[i]>max_sec) && (arr[i] != max)){
             max_sec = arr[i];
-            printf("%d",arr[i]);
+            printf("%d",max_sec);
         }
-        
         else{
             printf("-1");
             break;
         }
     }
-return 0;
+
 }
