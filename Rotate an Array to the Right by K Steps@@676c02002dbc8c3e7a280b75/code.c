@@ -8,10 +8,10 @@ int main(){
     scanf("%d",&k);
     int q;
     if(k>n){
-        q=k%n;
+        q=k;
     }
     else{
-        q=k;
+        q=k%n;
     }
     for (int i =0;i<n;i++){
         scanf("%d",&arr[i]);
