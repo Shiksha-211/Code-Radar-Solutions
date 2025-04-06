@@ -15,7 +15,7 @@ int main(){
             max_sec = max;
             max= arr[i];
         }
-        if((arr[i]>max_sec) && (max_sec != max)){
+        if((arr[i]>max_sec) && (arr[i] != max)){
             max_sec = arr[i];
         }
     }
