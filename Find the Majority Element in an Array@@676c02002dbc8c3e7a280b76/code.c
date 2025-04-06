@@ -13,7 +13,7 @@ int main (){
             count++;
         }
     }
-    if (count>n/2){
+    if (count<n/2){
  printf("%d",count);
     }
    
