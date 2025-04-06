@@ -17,8 +17,9 @@ int main(){
         }
         if((arr[i]>max_sec) && (arr[i] != max)){
             max_sec = arr[i];
-            printf("%d",max_sec);
+            printf("%d",arr[i]);
         }
+        break;
         else{
             printf("-1");
         }
