@@ -18,6 +18,11 @@ int main(){
             sum+=a;
             temp/=10;
         }
-        printf("%d ",sum);
+        if(sum<0){
+            printf("%d ",-sum);
+        }else{
+            printf("%d ",sum);
+        }
+        
     }
 }
