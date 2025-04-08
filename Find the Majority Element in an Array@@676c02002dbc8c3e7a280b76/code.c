@@ -1,24 +1,35 @@
-// Your code here...
 #include <stdio.h>
-int main (){
+
+int main() {
     int n;
-    scanf("%d",&n);
+    scanf("%d", &n);
     int arr[n];
-    for(int i=0;i<n;i++){
-        scanf("%d",&arr[i]);
+
+    for(int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
     }
-    int count =0;
-    for(int i=0;i<n;i++){
-        if(arr[i]== arr[i+1]){
-            count++;
+
+    int majority = -1;
+
+    for(int i = 0; i < n; i++) {
+        int count = 0;
+        for(int j = 0; j < n; j++) {
+            if(arr[i] == arr[j]) {
+                count++;
+            }
+        }
+
+        if(count > n / 2) {
+            majority = arr[i];
+            break;
         }
     }
-    if (count<n/2){
-    printf("%d",count);
+
+    if(majority != -1) {
+        printf("%d\n", majority);
+    } else {
+        printf("-1\n");
     }
-    else{
-        printf("-1");
-    }
-   
+
     return 0;
-} 
+}
