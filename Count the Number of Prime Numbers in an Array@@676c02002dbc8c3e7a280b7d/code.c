@@ -17,7 +17,7 @@ int main(){
     
     }
     if(count ==2){
-        printf("%d",count );
+        printf("%d",count);
     }
     return 0;
 }
