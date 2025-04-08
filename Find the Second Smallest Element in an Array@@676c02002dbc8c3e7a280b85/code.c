@@ -23,7 +23,7 @@ int main() {
         }
     }
 
-    if (min_sec == INT_MIN) {
+    if (min_sec == INT_MAX) {
         printf("-1\n");  // No second largest found
     } else {
         printf("%d\n", min_sec);
