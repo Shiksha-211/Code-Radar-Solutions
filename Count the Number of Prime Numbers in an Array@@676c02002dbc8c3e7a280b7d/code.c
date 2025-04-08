@@ -1,23 +1,31 @@
-// Your code here...
 #include <stdio.h>
-int main(){
+#include <stdbool.h>
+
+// Helper function to check for prime number
+bool isPrime(int num) {
+    if (num < 2) return false;
+    for (int i = 2; i * i <= num; i++) {
+        if (num % i == 0) return false;
+    }
+    return true;
+}
+
+int main() {
     int n;
-    scanf("%d",&n);
+    scanf("%d", &n);
     int arr[n];
-    for(int i=0;i<n;i++){
-        scanf("%d",&arr[i]);
+
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
     }
-    int count =0;
-    for(int i = 0;i<n;i++){
-        for(int j=1;j<arr[i]+1;j++){
-            if(arr[j]%i==0){
-                count++;
-            }
+
+    int count = 0;
+    for (int i = 0; i < n; i++) {
+        if (isPrime(arr[i])) {
+            count++;
         }
-    
     }
-    if(count ==2){
-        printf("%d",count);
-    }
+
+    printf("%d\n", count);
     return 0;
 }
