@@ -16,7 +16,7 @@ int main() {
 
     for (int i = 0; i < n; i++) {
         if (arr[i] > min ) {
-            min_sec = mine;
+            min_sec = min;
             min = arr[i];
         } else if (arr[i] > min_sec && arr[i] != min) {
             min_sec = arr[i];
